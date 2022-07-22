@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mercado Liebre</title>
+    <script
+      src="https://kit.fontawesome.com/15a2e4bbb7.js"
+      crossorigin="anonymous"
+    ></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="/css/styles.css" />
+  </head>
+  <body class="home bg-light">
+    <header class="home__header bg-warning">
+      <div class="container pt-3">
+        <div class="row">
+          <div class="col-12 col-md-6 col-lg-7">
+            <img width="200px" src="/images/logo-mercado-liebre.svg" alt="logo" />
+          </div>
+          <div class="col-12 col-md-6 col-lg-5 mt-3 mt-md-0">
+            <form class="position-relative"  role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn border-0 position-absolute bottom-50 end-0 me-3 mb-4" type="submit"><i
+                  class="fa-solid fa-magnifying-glass"></i></button>
+            </form>
+          </div>
+        </div>
+       
+        
+      </div>
+     
+      <nav class="navbar navbar-expand-md bg-warning">
+        <div class="container">
+         
+          <button class="navbar-toggler " type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse ms-2" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="/">Home</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                  aria-expanded="false">
+                  Categorías
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Hogar</a></li>
+                  <li><a class="dropdown-item" href="#">Electrodomésticos</a></li>
+                  <!-- <li><hr class="dropdown-divider"></li> -->
+                  <li><a class="dropdown-item" href="#">Tiempo libre</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="/products/add">Vender</a>
+              </li>
+            </ul>
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="/register">Registrate</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="/login">Ingresá</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="#">Mis compras</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+     
+    </header>
+    <main class="container">
+        <section class="row">
+          <div class="col-12 col-md-10 col-lg-6 mx-auto my-5">
+ <article class="card">
+              <div class="card-header text-center">
+                <h3>Creá tu cuenta</h3> 
+              </div>
+                <div class="card-body">
+                    <form class="row">
+                        <div class="col-12 col-md-6 mb-3">
+                          <label for="firstname" class="form-label">Nombre</label>
+                          <input name="firstname" type="text" class="form-control" id="firstname" aria-describedby="emailHelp">
+                        </div>
+                        <div class="col-12 col-md-6 mb-3">
+                            <label for="lastname" class="form-label">Apellido</label>
+                            <input name="lastname" type="text" class="form-control" id="lastname" aria-describedby="emailHelp">
+                          </div>
+                          <div class="col-12 col-md-6 mb-3">
+                            <label for="username" class="form-label">Nombre de usuario</label>
+                            <input name="username" type="text" class="form-control" id="username" aria-describedby="emailHelp">
+                          </div>
+                          <div class="col-12 col-md-6 mb-3">
+                            <label for="birthday" class="form-label">Fecha de nacimiento</label>
+                            <input name="birthday" type="date" class="form-control" id="birthday" aria-describedby="emailHelp">
+                          </div>
+                          <div class="col-12  mb-3">
+                            <label for="email" class="form-label">Email</label>
+                            <input name="email" type="email" class="form-control" id="email" aria-describedby="emailHelp">
+                          </div>
+                          <div class="col-12 col-md-6 mb-3">
+                            <label for="pass" class="form-label">Contraseña</label>
+                            <input name="pass" type="password" class="form-control" id="pass">
+                          </div>
+                        <div class="col-12 col-md-6 mb-3">
+                          <label for="pass2" class="form-label">Confirmar contraseña</label>
+                          <input name="pass2" type="password" class="form-control" id="pass2">
+                        </div>
+                        <div class="col-12 col-md-6 mb-3">
+                          <h6>Perfil del usuario</h6>
+                          <div class="form-check">
+                            <input name="profile" type="radio" class="form-check-input" id="comprador">
+                            <label class="form-check-label" for="comprador">Comprador</label>
+                          </div>
+                          <div class="form-check">
+                            <input name="profile" type="radio" class="form-check-input" id="vendedor">
+                            <label class="form-check-label" for="vendedor">Vendedor</label>
+                          </div>
+                        </div>
+                        <div class="col-12 col-md-6 mb-3">
+                          <h6>Categorías de interés</h6>
+                          <div class="form-check">
+                            <input name="interests" type="checkbox" class="form-check-input" id="electro">
+                            <label class="form-check-label" for="electro">Electro</label>
+                          </div>
+                          <div class="form-check">
+                            <input name="interests" type="checkbox" class="form-check-input" id="moda">
+                            <label class="form-check-label" for="moda">Moda</label>
+                          </div>
+                          <div class="form-check">
+                            <input name="interests" type="checkbox" class="form-check-input" id="hogar">
+                            <label class="form-check-label" for="hogar">Hogar</label>
+                          </div>
+                          <div class="form-check">
+                            <input name="interests" type="checkbox" class="form-check-input" id="jugueteria">
+                            <label class="form-check-label" for="jugueteria">Jugueteria</label>
+                          </div>
+                        </div>
+                        <div class="col-12 col-md-6 mb-3">
+                          <label for="image" class="form-label">Foto de perfil</label>
+                          <input name="image" type="file" class="form-control" id="image">
+                        </div>
+                        <div class="col-12 col-md-6 mb-3 d-flex align-items-end">
+                          <div class="form-check">
+                            <input name="terms" type="checkbox" class="form-check-input" id="terms">
+                            <label class="form-check-label" for="terms">Acepto bases y condiciones</label>
+                          </div>
+                          
+                        </div>
+                        <div class="col-12 d-flex justify-content-center gap-2">
+                          <button type="reset" class="btn btn-secondary">Cancelar</button>
+                          <button type="submit" class="btn btn-primary">Registrame</button>
+                        </div>
+                        
+                      </form>
+                </div>
+            </article>
+          </div>
+           
+       
+         
+        </section>
+    </main>
+  
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+      crossorigin="anonymous"></script>
+
+  </body>
+</html>

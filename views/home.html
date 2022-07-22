@@ -13,57 +13,32 @@
 </head>
 
 <body class="home bg-light">
-  <header class="home__header">
-    <!--  <div class="home__header_logo">
-        <img src="/images/logo-mercado-liebre.svg" alt="" />
-      </div>
-      <div class="home__header__buscador">
-        <form action="">
-          <input type="text" placeholder="Buscar productos, marcas" />
-          <button type="submit">
-            <i class="fa-solid fa-magnifying-glass"></i>
-          </button>
-        </form>
-      </div>
-      <span>
-        <i class="fa-solid fa-hand-holding-dollar"></i> Comprá en cuotas y sin
-        tarjeta de crédito
-      </span>
-      <nav class="home__header__menu">
-        <ul class="home__header__menu--nav">
-          <li><a href="">Ofertas</a></li>
-          <li><a href="">Tiendas oficiales</a></li>
-          <li><a href="">Vender</a></li>
-          <li><a href="">Ayuda</a></li>
-        </ul>
-        <ul class="home__header__menu--user">
-          <li>
-            <a href="">Creá tu cuenta <i class="fa-solid fa-id-card"></i></a>
-          </li>
-          <li>
-            <a href="">Ingresá <i class="fa-solid fa-right-to-bracket"></i></a>
-          </li>
-          <li>
-            <a href=""
-              >Mis compras <i class="fa-solid fa-basket-shopping"></i
-            ></a>
-          </li>
-        </ul>
-      </nav>
-      <div class="home__header__burger">
-        <button><i class="fa-solid fa-bars"></i></button>
-      </div> -->
-    <nav class="navbar navbar-expand-lg bg-warning">
-      <div class="container-fluid">
-        <div class="mx-0 mx-md-4">
-          <img width="150px" src="/images/logo-mercado-liebre.svg" alt="logo" />
-
+  <header class="home__header bg-warning">
+    <div class="container pt-3">
+      <div class="row">
+        <div class="col-12 col-md-6 col-lg-7">
+          <img width="200px" src="/images/logo-mercado-liebre.svg" alt="logo" />
         </div>
+        <div class="col-12 col-md-6 col-lg-5 mt-3 mt-md-0">
+          <form class="position-relative"  role="search">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn border-0 position-absolute bottom-50 end-0 me-3 mb-4" type="submit"><i
+                class="fa-solid fa-magnifying-glass"></i></button>
+          </form>
+        </div>
+      </div>
+     
+      
+    </div>
+   
+    <nav class="navbar navbar-expand-md bg-warning">
+      <div class="container">
+       
         <button class="navbar-toggler " type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
           aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <div class="collapse navbar-collapse ms-2" id="navbarSupportedContent">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li class="nav-item">
               <a class="nav-link active" aria-current="page" href="/">Home</a>
@@ -86,31 +61,32 @@
           </ul>
           <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
             <li class="nav-item">
-              <a class="nav-link" aria-current="page" href="/">Registrate</a>
+              <a class="nav-link" aria-current="page" href="/register">Registrate</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" aria-current="page" href="#">Ingresá</a>
+              <a class="nav-link" aria-current="page" href="/login">Ingresá</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" aria-current="page" href="#">Mis compras</a>
             </li>
           </ul>
-          <form class="position-relative mx-0 mx-md-4" role="search">
-            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-            <button class="btn border-0 position-absolute top-0 end-0" type="submit"><i
-                class="fa-solid fa-magnifying-glass"></i></button>
-          </form>
         </div>
       </div>
     </nav>
+   
   </header>
   <main class="container  ">
     <section class="row">
       <h2 class="col-12 text-dark my-4">Basado en tu última visita</h2>
       <div class="col-12 col-md-4 col-lg-3 mb-3 ">
-        <article class="card ">
+        <article class="card shadow">
           <img src="/images/img-cafetera-moulinex.jpg" class="card-img-top" alt="producto">
-          <div class="card-body">
+          <div class="card-body pt-0 border-top position-relative">
+            <span class="fs-6 p-1 text-success bg-white border border-success border-2 rounded-circle position-absolute bottom-50 end-0 me-3 mb-4">
+                <i class="fas fa-truck"></i>
+            </span>
+            
+
             <div class="d-flex align-items-end"> 
               <h2 class="m-0">$6.770</h2>
               <span>40% OFF</span>
@@ -121,9 +97,13 @@
         </article>
       </div>
       <div class="col-12 col-md-4 col-lg-3 mb-3">
-        <article class="card ">
+        <article class="card shadow">
           <img src="/images/img-macbook-pro-2019.jpg" class="card-img-top" alt="producto">
-          <div class="card-body">
+          <div class="card-body pt-0 border-top position-relative">
+            <span class="fs-6 p-1 text-success bg-white border border-success border-2 rounded-circle position-absolute bottom-50 end-0 me-3 mb-4">
+                <i class="fas fa-truck"></i>
+            </span>
+            
 
             <div class="d-flex align-items-end"> 
               <h2 class="m-0 me-2">$230.000</h2>
@@ -135,9 +115,13 @@
         </article>
       </div>
       <div class="col-12 col-md-4 col-lg-3 mb-3">
-        <article class="card" >
+        <article class="card"shadow >
           <img class="card-img-top" src="/images/img-samsung-galaxy-s10.jpg" alt="samsung" />
-          <div class="card-body">
+          <div class="card-body pt-0 border-top position-relative">
+            <span class="fs-6 p-1 text-success bg-white border border-success border-2 rounded-circle position-absolute bottom-50 end-0 me-3 mb-4">
+                <i class="fas fa-truck"></i>
+            </span>
+            
             <div class="d-flex align-items-end"> 
    <h2 class="m-0 me-2">$70.500</h2>
             <span>10% OFF</span>
@@ -149,10 +133,14 @@
 
       </div>
       <div class="col-12 col-md-4 col-lg-3 mb-3">
-        <article class="card ">
+        <article class="card shadow">
 
           <img class="card-img-top" src="/images/img-tv-samsung-smart.jpg" alt="smart" />
-          <div class="card-body">
+          <div class="card-body pt-0 border-top position-relative">
+            <span class="fs-6 p-1 text-success bg-white border border-success border-2 rounded-circle position-absolute bottom-50 end-0 me-3 mb-4">
+                <i class="fas fa-truck"></i>
+            </span>
+            
             <div class="d-flex align-items-end"> 
               <h2 class="m-0 me-2">$23.200</h2>
             <span>5% OFF</span>
@@ -167,10 +155,14 @@
     <section class="row">
       <h2 class="col-12 text-dark my-4">Ofertas</h2>
       <div class="col-12 col-md-4 col-lg-3 mb-3">
-        <article class="card ">
+        <article class="card shadow">
 
           <img class="card-img-top" src="/images/img-cafetera-moulinex.jpg" alt="cafetera" />
-          <div class="card-body">
+          <div class="card-body pt-0 border-top position-relative">
+            <span class="fs-6 p-1 text-success bg-white border border-success border-2 rounded-circle position-absolute bottom-50 end-0 me-3 mb-4">
+                <i class="fas fa-truck"></i>
+            </span>
+            
             <div class="d-flex align-items-end"> 
  <h2 class="m-0 me-2">$6.770</h2>
             <span>40% OFF</span>
@@ -182,10 +174,14 @@
 
       </div>
       <div class="col-12 col-md-4 col-lg-3 mb-3">
-        <article class="card ">
+        <article class="card shadow">
 
           <img class="card-img-top" src="/images/img-macbook-pro-2019.jpg" alt="macbook" />
-          <div class="card-body">
+          <div class="card-body pt-0 border-top position-relative">
+            <span class="fs-6 p-1 text-success bg-white border border-success border-2 rounded-circle position-absolute bottom-50 end-0 me-3 mb-4">
+                <i class="fas fa-truck"></i>
+            </span>
+            
             <div class="d-flex align-items-end"> 
               <h2 class="m-0 me-2">$230.000</h2>
             <span>20% OFF</span>
@@ -197,10 +193,14 @@
 
       </div>
       <div class="col-12 col-md-4 col-lg-3 mb-3">
-        <article class="card ">
+        <article class="card shadow">
 
           <img class="card-img-top" src="/images/img-samsung-galaxy-s10.jpg" alt="samsung" />
-          <div class="card-body">
+          <div class="card-body pt-0 border-top position-relative">
+            <span class="fs-6 p-1 text-success bg-white border border-success border-2 rounded-circle position-absolute bottom-50 end-0 me-3 mb-4">
+                <i class="fas fa-truck"></i>
+            </span>
+            
             <div class="d-flex align-items-end"> 
               <h2 class="m-0 me-2">$70.500</h2>
             <span>10% OFF</span>
@@ -212,10 +212,14 @@
 
       </div>
       <div class="col-12 col-md-4 col-lg-3 mb-3">
-        <article class="card ">
+        <article class="card shadow">
 
           <img class="card-img-top" src="/images/img-tv-samsung-smart.jpg" alt="smart" />
-          <div class="card-body">
+          <div class="card-body pt-0 border-top position-relative">
+            <span class="fs-6 p-1 text-success bg-white border border-success border-2 rounded-circle position-absolute bottom-50 end-0 me-3 mb-4">
+                <i class="fas fa-truck"></i>
+            </span>
+            
             <div class="d-flex align-items-end"> 
               <h2 class="m-0 me-2">$23.200</h2>
             <span>5% OFF</span>
